@@ -91,4 +91,27 @@ class UsuariosController extends BaseController
         ];
         return view('usuarios/editar', $data);
     }
+
+    public function atualizar(){
+
+        if (!$this->request->isAJAX()) {
+            return redirect()->back();
+        }
+
+        $retorno ['token'] = csrf_hash();
+
+        // $retorno['info'] = 'Essa é a mensagem de informação';
+
+        return $this->response->setJSON($retorno);
+
+
+        // $postr = $this->request->getPost();
+
+        // echo "<pre>";
+        // print_r($postr);
+        // echo "</pre>";
+
+        exit();
+
+    }
 }

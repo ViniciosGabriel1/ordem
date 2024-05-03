@@ -15,9 +15,7 @@
             <label class="form-control-label">Confirme sua Senha</label>
             <input type="password" name="senha-confirmacao" placeholder="Confirme sua senha" class="form-control">
         </div>
-        <div class="form-group">
-            <input type="submit" value="Signin" class="btn btn-primary">
-        </div>
+
 
         <div class="custom-control custom-checkbox">
 

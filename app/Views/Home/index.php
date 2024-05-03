@@ -10,7 +10,13 @@
 
 <?php echo $this->section('conteudo') ?> 
 <!--Aqui coloco os conteudos da view-->
+
+<a href="<?php echo site_url("UsuariosController/index") ?>" class="btn btn-secondary ml-2">Ir para a listagem</a>
+
+
 <?php echo $this->endSection() ?>
+
+
 
 
 
